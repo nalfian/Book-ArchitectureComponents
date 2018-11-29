@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            xmlns:tools="http://schemas.android.com/tools"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:padding="8dp"
+                                            tools:context=".view.activity.CreateBook">
+
+    <LinearLayout
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <EditText
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Title Book"
+                android:inputType="textCapSentences"/>
+
+        <EditText
+                android:id="@+id/tvDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description Book"
+                android:inputType="textMultiLine"/>
+
+        <EditText
+                android:id="@+id/tvPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Price Book"
+                android:inputType="number"/>
+
+        <Spinner
+                android:entries="@array/array_category"
+                android:id="@+id/spCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"/>
+
+
+        <EditText
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date Publish"/>
+
+        <EditText
+                android:id="@+id/tvIsbn"
+                android:maxLength="6"
+                android:inputType="textCapCharacters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ISBN"/>
+
+        <CheckBox
+                android:id="@+id/cbHardVover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hard Cover"/>
+
+
+        <ImageView
+                android:id="@+id/ivCover"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@mipmap/ic_launcher"
+                android:visibility="gone"/>
+
+
+        <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Save"/>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="8dp"
+              android:orientation="vertical"
+              tools:context=".view.fragment.DetailFragment">
+
+
+    <EditText
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:id="@+id/tvCodeBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Code Book"
+            android:inputType="number"/>
+
+    <EditText
+            android:id="@+id/tvPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price Book"
+            android:inputType="number"/>
+
+    <Spinner
+            android:id="@+id/spCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:entries="@array/array_category"/>
+
+
+    <EditText
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="Date Publish"/>
+
+    <EditText
+            android:inputType="textCapCharacters"
+            android:id="@+id/tvIsbn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ISBN"
+            android:maxLength="6"/>
+
+    <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Save"/>
+
+</LinearLayout>

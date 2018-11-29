@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".view.fragment.ProfilFragment">
+
+    <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/ivCover"
+            android:layout_width="match_parent" android:layout_height="150dp"/>
+
+
+    <EditText
+            android:hint="Title Book"
+            android:id="@+id/tvTitle"
+            android:inputType="textCapSentences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <EditText
+            android:hint="Description Book"
+            android:inputType="textMultiLine"
+            android:id="@+id/tvDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    <Button
+            android:layout_marginTop="8dp"
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Save"/>
+
+</LinearLayout>

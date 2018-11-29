@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Book Arch Components</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="array_category">
+        <item>Category 1</item>
+        <item>Category 2</item>
+    </string-array>
+</resources>
